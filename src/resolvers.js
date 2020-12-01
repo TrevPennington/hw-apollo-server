@@ -11,7 +11,7 @@ const resolvers = {
         slug
       });
     },
-    async deleteLink(root, { id }, { models }) {
+    deleteLink(root, { id }, { models }) {
       return models.Link.destroy({
         where: { id }
       });
