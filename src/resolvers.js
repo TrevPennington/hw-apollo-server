@@ -14,7 +14,6 @@ const resolvers = {
       allLinks.forEach((item) => {
         allSlugs.push(item.dataValues.slug);
         if (item.dataValues.slug === slug) {
-          console.log("SLUG ALREADY EXISTS");
           //slug already exists - throw error and exit.
           //https://www.apollographql.com/docs/apollo-server/data/errors/
           throw new UserInputError("Slug already Exists", {
