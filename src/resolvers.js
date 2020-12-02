@@ -8,7 +8,7 @@ const resolvers = {
     async createLink(root, { url, slug }, { models }) {
       let verifiedUrl = new URL(url);
       let baseUrl = verifiedUrl.host;
-      s;
+
       let generatedSlug = "";
       if (slug === "") {
         //if user did not specify a custom slug, generate one
